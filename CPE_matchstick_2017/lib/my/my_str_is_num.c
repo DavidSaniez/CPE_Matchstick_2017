@@ -1,0 +1,24 @@
+/*
+** EPITECH PROJECT, 2018
+** my_str_is_num
+** File description:
+** By DavidS
+*/
+
+#include <stdlib.h>
+
+int my_str_is_num(char *str)
+{
+	int i = 0;
+
+	if (str == NULL)
+		return (84);
+	while (str[i] != '\0') {
+		if (str[i] < '0' || str[i] > '9')
+			return (84);
+		i++;
+	}
+	if (i == 0)
+		return (84);
+	return (0);
+}

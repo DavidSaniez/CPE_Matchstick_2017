@@ -1,0 +1,34 @@
+/*
+** EPITECH PROJECT, 2018
+** my.h
+** File description:
+** my.h
+*/
+
+#include "my.h"
+
+#ifndef MATCHISTICK_H_
+#define MATCHSTICK_H_
+
+void print_map(map_t);
+int my_strlen(char *);
+map_t create_map(int, int);
+void fill_map(map_t *, int);
+int player_turn(map_t *);
+char *get_next_line(int);
+int my_atoi(char *);
+int my_putstr(char *);
+int matchstick(int, char **);
+int arg_error(char **);
+int check_error_line(map_t, char *);
+int get_line_nb(map_t *);
+int get_match_nb(map_t *, int);
+int check_error_matches(map_t, char *, int);
+int change_map(map_t *, int, int, char);
+int my_putnbr(int);
+int check_win(map_t *, char);
+int my_str_is_num(char *);
+int count_char (char *, char);
+int ia_turn(map_t *);
+
+#endif
